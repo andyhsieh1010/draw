@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽签系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>抽签系统</h1>
+    <button onclick="drawLot()">抽签</button>
+    <button onclick="reset()">重置</button>
+    <div class="winner" id="winnerDisplay"></div>
+    <div class="lot-count" id="lotCountDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, err => {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script>
