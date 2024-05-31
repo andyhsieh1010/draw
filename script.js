@@ -34,7 +34,7 @@ function updateLotCount() {
     });
     let html = '<h3>各獎項數量：</h3><ul>';
     for (const [lot, count] of Object.entries(counts)) {
-        html += `<li>${lot}: ${count}个</li>`;
+        html += `<li>${lot}: ${count}個</li>`;
     }
     html += '</ul>';
     lotCountDisplay.innerHTML = html;
