@@ -8,7 +8,7 @@ let lots = [...originalLots];
 
 function drawLot() {
     if (lots.length === 0) {
-        alert('所有签都已抽完');
+        alert('所有籤已經抽完');
         return;
     }
     const randomIndex = Math.floor(Math.random() * lots.length);
@@ -32,7 +32,7 @@ function updateLotCount() {
     lots.forEach(lot => {
         counts[lot] = (counts[lot] || 0) + 1;
     });
-    let html = '<h3>各奖项数量：</h3><ul>';
+    let html = '<h3>各獎項數量：</h3><ul>';
     for (const [lot, count] of Object.entries(counts)) {
         html += `<li>${lot}: ${count}个</li>`;
     }
