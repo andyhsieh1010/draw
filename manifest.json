@@ -1,10 +1,10 @@
 {
-    "name": "抽签系统",
-    "short_name": "抽签",
+    "name": "抽籤系統",
+    "short_name": "抽籤",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
-    "description": "一个简单的抽签系统",
+    "description": "一個簡單的抽籤系統",
     "icons": [
         {
             "src": "icon.png",
